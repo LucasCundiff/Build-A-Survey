@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Coffee Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-body">
+        <section>
+            <h1 id="title">Coffee Survey</h1>
+            <p id="description">We'd like to see what coffee people prefer to drink!</p>
+        </section>
+        <form id="survey-form" action="">
+            <fieldset class="user-info">
+                <label id="name-label" for="name">Name <input required id="name" type="text" placeholder="Lucas Cundiff"/></label>
+                <label id="email-label" for="email">Email <input required id="email" type="email" minlength="8" placeholder="example@email.com"/></label>
+                <label id="number-label" for="number">Age <input id="number" type="number" min="10" max="120" placeholder="23"/></label>
+            </fieldset>
+            <fieldset class="coffee-consumption">
+                <legend>How often do you drink coffee?</legend>
+                <select id="dropdown">
+                <option>Everyday</option>
+                <option>2-3 times a week</option>
+                <option>Once in a while</option>
+                <option>Never</option>
+                </select>
+            </fieldset>
+            <fieldset class="prefered-temperature">
+                <legend>Prefered Temperature</legend>
+                <label for="radio-hot"><input checked class="inline" id="radio-hot" type="radio" name="hot-iced" value="hot">Hot</label>
+                <label for="radio-iced"><input class="inline" id="radio-iced" type="radio" name="hot-iced" value="hot">Iced</label>
+            </fieldset>
+            <fieldset class="flavors">
+                <legend>Which Coffee flavors do you like?</legend>
+                <label for="flavor-black"><input id="flavor-black" type="checkbox" class="inline" value="black">Black</label>
+                <label for="flavor-caramel"><input id="flavor-caramel" type="checkbox" class="inline" value="caramel">Caramel</label>
+                <label for="flavor-mocha"><input id="flavor-mocha" type="checkbox" class="inline" value="mocha">Mocha</label>
+                <label for="flavor-vanilla"><input id="flavor-vanilla" type="checkbox" class="inline" value="vanilla">Vanilla</label>
+                <label for="flavor-hazelnut"><input id="flavor-hazelnut" type="checkbox" class="inline" value="hazelnut">Hazelnut</label>
+            </fieldset>
+            <fieldset class="additional-info">
+                <legend>What else do you enjoy with your coffee?
+                <textarea placeholder="donuts, banana loaf, cake pop, ..."></textarea>
+            </fieldset>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>

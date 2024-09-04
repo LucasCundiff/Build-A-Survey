@@ -1,0 +1,59 @@
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(68, 50, 2);
+    color: rgb(68, 50, 2);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .form-body{
+    width: 60%;
+    background-color: rgb(209, 189, 137);
+    margin: 10px auto;
+    padding: 15px 0;
+  }
+  
+  h1{
+    font-size: 26px;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  form { 
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  label{
+    display: block;
+  }
+  
+  fieldset{
+    border: none;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  input, select, textarea{
+    width: 100%;
+  }
+  
+  #submit {
+    width: 50%;
+    margin: 0 25%;
+  }
+  
+  .inline{
+    display: inline;
+    width: unset;
+  }
+  
+  ::placeholder {
+    color: rgba(172, 168, 158, 0.6);
+  }
